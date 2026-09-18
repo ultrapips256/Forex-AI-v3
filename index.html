@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FOREX AI V2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="navbar">
+  <h2 class="logo">FOREX <span>AI</span></h2>
+
+  <div class="nav-buttons">
+    <button class="login-btn" onclick="openLogin()">Login</button>
+    <button class="signup-btn" onclick="openSignup()">Create Account</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Trade Smarter With <span>FOREX AI</span></h1>
+
+    <p>
+      AI-powered Trading Bots, Premium Forex Signals,
+      Account Management (50/50) and FREE Live Economic News Prediction.
+    </p>
+
+    <div class="hero-buttons">
+      <button onclick="openSignup()">Create Free Account</button>
+      <button class="outline" onclick="openLogin()">Login</button>
+    </div>
+  </div>
+</section>
+
+<section class="market-ticker">
+  <marquee>
+    XAU/USD • LIVE | EUR/USD • LIVE | GBP/USD • LIVE |
+    BTC/USD • LIVE | NASDAQ • LIVE
+  </marquee>
+</section>
+
+<section class="news-section">
+  <h2>FREE NEWS PREDICTION AI</h2>
+
+  <div class="news-card">
+    <div class="live">LIVE</div>
+
+    <h3>Gold (XAU/USD)</h3>
+
+    <p>CPI • FOMC • NFP • PPI • Retail Sales • Jobless Claims</p>
+
+    <div class="prediction-row">
+      <span class="buy">BUY / SELL</span>
+      <span class="confidence">Confidence %</span>
+      <span class="countdown">Countdown</span>
+    </div>
+
+    <button onclick="openNews()">View Live Prediction</button>
+  </div>
+</section>
+
+<section class="services">
+  <h2>OUR SERVICES</h2>
+
+  <div class="service-card">
+    <h3>Starter AI Bot</h3>
+    <p class="price">$30</p>
+    <button onclick="buyNow('Starter AI Bot','$30')">Buy Now</button>
+  </div>
+
+  <div class="service-card">
+    <h3>Pro AI Bot</h3>
+    <p class="price">$75</p>
+    <button onclick="buyNow('Pro AI Bot','$75')">Buy Now</button>
+  </div>
+
+  <div class="service-card">
+    <h3>Elite AI Bot</h3>
+    <p class="price">$150</p>
+    <button onclick="buyNow('Elite AI Bot','$150')">Buy Now</button>
+  </div>
+
+  <div class="service-card">
+    <h3>Forex Signals</h3>
+    <p class="price">Basic $15 • Pro $30 • VIP $50</p>
+    <button onclick="buyNow('VIP Signals','$50')">Buy Now</button>
+  </div>
+
+  <div class="service-card">
+    <h3>Account Management</h3>
+    <p class="price">50/50 Profit Share</p>
+    <button onclick="openAccount()">Start Now</button>
+  </div>
+</section>
+
+<section class="why-ai">
+  <h2>WHY CHOOSE FOREX AI?</h2>
+
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h3>AI Market Analysis</h3>
+    <div class="content">
+      We combine macro analysis, technical analysis, sentiment and risk management.
+    </div>
+  </div>
+
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h3>Live News Prediction</h3>
+    <div class="content">
+      Gold predictions around CPI, FOMC, NFP and other high-impact news.
+    </div>
+  </div>
+
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h3>24/7 WhatsApp Support</h3>
+    <div class="content">
+      Payment verification and customer support through WhatsApp.
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h3>How do I buy a bot?</h3>
+    <div class="content">
+      You must create an account and login before purchasing.
+    </div>
+  </div>
+
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h3>Is News Prediction free?</h3>
+    <div class="content">
+      Yes. Every logged-in user gets free access to the News Prediction dashboard.
+    </div>
+  </div>
+
+  <div class="accordion" onclick="toggleAccordion(this)">
+    <h3>What is Account Management?</h3>
+    <div class="content">
+      Forex AI manages your MT5 account on a 50/50 profit-sharing basis.
+    </div>
+  </div>
+</section>
+
+<footer>
+  <h2>FOREX AI</h2>
+
+  <p>WhatsApp: +256 765 560 729</p>
+  <p>Email: nobleai90@gmail.com</p>
+  <p>Instagram: @nobleai90</p>
+  <p>TikTok: @nobleai90</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
