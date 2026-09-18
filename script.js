@@ -45,21 +45,31 @@ function closeSignup() {
   document.getElementById("signupModal").style.display = "none";
 }
 
-function signupUser() {
-  const pass = document.getElementById("signupPassword").value;
+async function signupUser() {
+  const email = document.getElementById("signupEmail").value;
+  const password = document.getElementById("signupPassword").value;
   const confirm = document.getElementById("confirmPassword").value;
 
-  if (pass.length < 8) {
+  if (password.length < 8) {
     alert("Password must be at least 8 characters.");
     return;
   }
 
-  if (pass !== confirm) {
+  if (password !== confirm) {
     alert("Passwords do not match.");
     return;
   }
 
-  loggedIn = true;
+  const { error } = await supabase.auth.signUp({
+    email,
+    password
+  });
+
+  if (error) {
+    alert(error.message);
+    return;
+  }
+
   alert("Account created successfully!");
   closeSignup();
 }
