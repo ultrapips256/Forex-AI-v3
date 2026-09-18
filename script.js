@@ -1,4 +1,8 @@
+// SUPABASE CONFIG
+const SUPABASE_URL = "https://atpavkarshjlnhckjvsl.supabase.co";
+const SUPABASE_KEY = "YOUR_PUBLISHABLE_KEY_HERE";
 
+const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 // ===== FOREX AI V2 =====
 
 let loggedIn = false;
