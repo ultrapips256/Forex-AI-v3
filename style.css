@@ -1,1 +1,217 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
 
+body{
+  background:#050505;
+  color:white;
+  line-height:1.6;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 25px;
+  background:#090909;
+  border-bottom:2px solid #00ff88;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:800;
+}
+
+.logo span{
+  color:#00ff88;
+}
+
+.nav-buttons button{
+  padding:10px 18px;
+  border:none;
+  border-radius:10px;
+  margin-left:10px;
+  font-weight:bold;
+}
+
+.login-btn{
+  background:#1b1b1b;
+  color:#00ff88;
+}
+
+.signup-btn{
+  background:#00ff88;
+  color:black;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:100px 20px;
+  background:linear-gradient(180deg,#06210f,#050505);
+}
+
+.hero h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero span{
+  color:#00ff88;
+}
+
+.hero p{
+  color:#cccccc;
+  max-width:600px;
+  margin:auto;
+}
+
+.hero-buttons{
+  margin-top:25px;
+}
+
+.hero-buttons button{
+  padding:14px 25px;
+  margin:10px;
+  border-radius:30px;
+  border:none;
+  font-weight:bold;
+}
+
+.hero-buttons .outline{
+  background:transparent;
+  color:#00ff88;
+  border:2px solid #00ff88;
+}
+
+.hero-buttons button:first-child{
+  background:#00ff88;
+  color:black;
+}
+
+/* LIVE TICKER */
+.market-ticker{
+  background:#00aa55;
+  color:black;
+  padding:12px;
+  font-weight:bold;
+}
+
+/* NEWS CARD */
+.news-section{
+  padding:30px 20px;
+}
+
+.news-card{
+  background:#0d1610;
+  border:2px solid #00ff88;
+  border-radius:20px;
+  padding:25px;
+}
+
+.live{
+  display:inline-block;
+  background:red;
+  color:white;
+  padding:6px 12px;
+  border-radius:20px;
+  margin-bottom:15px;
+}
+
+.prediction-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:15px 0;
+}
+
+.prediction-row span{
+  background:#112017;
+  color:#00ff88;
+  padding:8px 12px;
+  border-radius:20px;
+}
+
+.news-card button{
+  width:100%;
+  padding:14px;
+  background:#00ff88;
+  color:black;
+  border:none;
+  border-radius:12px;
+  font-weight:bold;
+}
+
+/* SERVICES */
+.services{
+  padding:30px 20px;
+}
+
+.service-card{
+  background:#101010;
+  border:2px solid #00ff88;
+  border-radius:18px;
+  padding:20px;
+  margin-bottom:20px;
+}
+
+.price{
+  color:#00ff88;
+  font-size:24px;
+  font-weight:700;
+}
+
+.service-card button{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  background:#00ff88;
+  color:black;
+  border:none;
+  border-radius:10px;
+  font-weight:bold;
+}
+
+/* WHY CHOOSE + FAQ */
+.why-ai,.faq{
+  padding:30px 20px;
+}
+
+.accordion{
+  background:#111;
+  border:1px solid #00ff88;
+  border-radius:12px;
+  padding:18px;
+  margin-bottom:12px;
+  cursor:pointer;
+}
+
+.accordion h3{
+  color:#00ff88;
+}
+
+.content{
+  display:none;
+  margin-top:12px;
+  color:#ccc;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:35px 20px;
+  background:#090909;
+  border-top:2px solid #00ff88;
+  color:#bbb;
+}
+
+footer h2{
+  color:#00ff88;
+  margin-bottom:10px;
+}
