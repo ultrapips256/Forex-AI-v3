@@ -1,4 +1,5 @@
-// FOREX AI V2
+function signupUser() {
+  loggedIn = true;// FOREX AI V2
 
 let loggedIn = false;
 let selectedProduct = "";
@@ -79,7 +80,6 @@ function loginUser() {
 }
 
 // Temporary demo signup
-function signupUser() {
-  loggedIn = true;
+
   alert("Account Created Successfully!");
 }
