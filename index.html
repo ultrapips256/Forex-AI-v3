@@ -157,7 +157,55 @@
   <p>Instagram: @nobleai90</p>
   <p>TikTok: @nobleai90</p>
 </footer>
+<!-- LOGIN MODAL -->
+<div id="loginModal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeLogin()">&times;</span>
+    <h2>Login</h2>
 
+    <input id="loginEmail" type="email" placeholder="Email">
+
+    <div class="password-box">
+      <input id="loginPassword" type="password" placeholder="Password">
+      <button onclick="togglePassword('loginPassword')">👁</button>
+    </div>
+
+    <button onclick="loginUser()">Login</button>
+  </div>
+</div>
+
+<!-- SIGNUP MODAL -->
+<div id="signupModal" class="modal">
+  <div class="modal-box">
+    <span class="close" onclick="closeSignup()">&times;</span>
+    <h2>Create Account</h2>
+
+    <input placeholder="Full Name">
+    <input placeholder="Email">
+    <input placeholder="WhatsApp Number">
+
+    <select>
+      <option>Uganda</option>
+      <option>Kenya</option>
+      <option>Tanzania</option>
+      <option>Rwanda</option>
+      <option>United States</option>
+      <option>United Kingdom</option>
+    </select>
+
+    <div class="password-box">
+      <input id="signupPassword" type="password" placeholder="Password (8+ characters)">
+      <button onclick="togglePassword('signupPassword')">👁</button>
+    </div>
+
+    <div class="password-box">
+      <input id="confirmPassword" type="password" placeholder="Confirm Password">
+      <button onclick="togglePassword('confirmPassword')">👁</button>
+    </div>
+
+    <button onclick="signupUser()">Create Account</button>
+  </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
