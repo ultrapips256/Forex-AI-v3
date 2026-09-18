@@ -18,20 +18,24 @@ function closeLogin() {
   document.getElementById("loginModal").style.display = "none";
 }
 
-function loginUser() {
+async function loginUser() {
   const email = document.getElementById("loginEmail").value;
   const password = document.getElementById("loginPassword").value;
 
-  if (email === "" || password === "") {
-    alert("Fill in your email and password.");
+  const { error } = await supabase.auth.signInWithPassword({
+    email,
+    password
+  });
+
+  if (error) {
+    alert("Wrong email or password.");
     return;
   }
 
   loggedIn = true;
-  alert("Welcome to FOREX AI!");
   closeLogin();
+  window.location.href = "dashboard.html";
 }
-
 // ---------- SIGN UP ----------
 function openSignup() {
   document.getElementById("signupModal").style.display = "block";
